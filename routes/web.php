@@ -17,3 +17,9 @@ Route::get('/biodataortu', function () {
 Route::get('/asalsekolah', function () {
     return view('sekolah');
 });
+Route::get('/data', function () {
+    $nama = 'Jane Doe';
+
+    // return view('biodata.data', compact('nama'));
+    return view('biodata.data', ['nyamah' => $nama]);
+});
